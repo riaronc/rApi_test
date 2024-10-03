@@ -1,7 +1,7 @@
 import pytest
 import requests
 
-url = "http://localhost:6016/api/v1/"
+url = "http://localhost:8001/api/v1/"
 
 
 @pytest.fixture

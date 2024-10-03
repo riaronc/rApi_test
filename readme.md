@@ -40,6 +40,8 @@ cd similarity-search-qdrant
 
 ## Usage
 
+Swagger docs are available at `http://localhost:8001/docs`
+
 Test curl query  to check everything is working fine
 
 ```bash
@@ -47,3 +49,10 @@ curl -X POST "http://localhost:8001/api/v1/search" \
      -H "Content-Type: application/json" \
      -d '{"input_query": "What the AI maturity themes are?"}'
 ```
+
+## Tests
+
+Are located in `tests` folder. To run tests, execute the following command (Be sure to run the command from the internal venv):
+
+```bash
+pytest 

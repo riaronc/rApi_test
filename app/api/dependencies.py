@@ -10,6 +10,7 @@ from . import schemas
 async def process_search(
         request: schemas.SearchQueryRequest = Annotated[schemas.SearchQueryRequest, Body(...)]
 ) -> schemas.SearchQueryResponse:
+    # Encode the input query
     query_embedding = sentence_transformers.encode(request.input_query).tolist()
 
     # Search in Qdrant

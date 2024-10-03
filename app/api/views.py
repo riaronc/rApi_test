@@ -12,4 +12,5 @@ search_router = APIRouter()
 async def search(
         results: schemas.SearchQueryResponse = Depends(dependencies.process_search)
 ):
+    """ Search for a query in the database """
     return results
